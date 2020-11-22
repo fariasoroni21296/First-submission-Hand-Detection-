@@ -1,0 +1,5 @@
+demo/
+input_video/
+hand/*.caffemodel
+camera_config/__pycache__
+camera_config/camera_list.txt
