@@ -1,0 +1,2 @@
+-1
+rtspsrc location=rtsp://admin:NybSys123!@10.200.10.216/s1 name=r latency=0 ! rtph264depay ! h264parse ! decodebin ! videoconvert ! appsink'
