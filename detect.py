@@ -176,10 +176,10 @@ while ret:
             drawing = False
             # img = cv2.resize(canvas, (28, 28))
             canvas = cv2.flip(canvas, 1)
-            # roi = getROI(canvas)
-            # img = cv2.resize(roi, (28, 28))
-            img = cv2.resize(canvas, (28, 28))
-            img = cv2.GaussianBlur(img,(5,5),0)
+            roi = getROI(canvas)
+            img = cv2.resize(roi, (28, 28))
+            # img = cv2.resize(img, (28, 28))
+            # img = cv2.GaussianBlur(img,(5,5),0)
             cv2.imshow("ROI", img)
             img = Image.fromarray(img)
 
